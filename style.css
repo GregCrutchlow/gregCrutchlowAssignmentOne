@@ -30,6 +30,10 @@ body {
     text-decoration: none;
 }
 
+body p {
+        line-height: 30px;
+}
+
 .topLogo {
     font-family: 'Great Vibes', cursive;
     font-weight: 400;
@@ -178,6 +182,10 @@ h1 {
     color: #fdc800 ;
 }
 
+.yellowBtn:active {
+    transform: scale(0.97);
+}
+
 .quickLinks {
     background-color: #232323;
     min-height: 250px;
@@ -209,6 +217,10 @@ h1 {
     color: #fdc800;
 }
 
+.gallery {
+    background-color: #f8f8f8;
+}
+
 .galleryImgs {
     display: flex;
     justify-content: space-between;
@@ -219,6 +231,164 @@ h1 {
     width: 100%;
     height: 425px;
     margin: 60px 25px;
+}
+
+.cookingTips {
+    display: flex;
+}
+
+.articles p {
+    width: 40%;
+    margin: 25px 0;
+}
+
+.cookingText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+
+.cookingImg {
+    width: 50%;
+}
+
+.articles img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.popRecipes {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.popText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popImg {
+    width: 50%;
+}
+
+.smallBtn {
+    background: #fdc800;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.smallBtn:hover {
+    background: #232323;
+    color: #fdc800;
+}
+
+.smallBtn:active {
+    transform: scale(0.97);
+}
+
+.cook {
+    background: #fff;
+}
+
+.cookContainer {
+    display: flex;
+    align-items: center;
+}
+
+.cookImg {
+    width: 30%;
+    margin: 50px 50px 50px 0;
+}
+
+.cook img {
+    width: 100%;
+    height: auto;
+}
+
+.cookText {
+    width: 80%;
+}
+
+.cookText h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.1rem;
+}
+
+.cookText p {
+    margin: 25px 0;
+}
+
+.contact {
+    background-color: #232323;
+    color: #EAEDF4;
+    padding: 75px 0;
+}
+
+.contact .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact li, .contact a, .contact p {
+    margin: 10px 0;
+    color: #EAEDF4;
+    font-size: 0.75rem;
+}
+
+.bottomNav a:hover, .bottomRecent a:hover {
+    color: #fdc800;
+}
+
+.contact .form {
+    width: 45%;
+}
+
+.contact h4 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.form input {
+    width: 75%;
+    margin: 0;
+    padding: 0 25px;
+    border: none;
+    height: 40px;
+    font-size: 0.8rem;
+    vertical-align: bottom;
+    margin-right: -5px;
+}
+
+.form button {
+    background: #fdc800;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 25%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+        vertical-align: bottom;
+
+}
+
+footer {
+    background-color: #000;
+    color: #232323;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
