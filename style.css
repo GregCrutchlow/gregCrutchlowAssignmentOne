@@ -55,15 +55,16 @@ a {
 header {
     background-image: url(./assets/asset-1.jpg);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center ;
     display: flex;
     align-items: center;
 }
 
 .navBar {
-    min-height: 70px;
+    min-height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -392,6 +393,10 @@ footer {
     justify-content: center;
 }
 
+@media (max-width: 1200px) {
+
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -412,9 +417,11 @@ footer {
         right: -100%;
         top: 100px;
         gap: 0;
-        width: 25%;
+        width: 100%;
+        /* height: 100%; */
         flex-direction: column;
-        background-color: transparent;
+        align-items: center;
+        background-color: rgba(231, 231, 231, 0.85);
         transition: 0.3s;
     }
 
@@ -424,5 +431,136 @@ footer {
 
     .navMenu.active {
         right: 0;
+    }
+
+    .sideNav {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .heroText h2{
+        font-size: 1rem;
+    }
+
+    .aboutTasty {
+        width: 95%;
+    }
+
+    .quickLinks {
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 45px;
+    }
+
+    .gallery .wrapper{
+        margin: 0;
+        width: 100%;
+    }
+
+    .galleryImgs img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    }
+
+    .galleryImgs li:nth-child(3) {
+        display: none;
+    }
+
+    .cookingTips, .popRecipes {
+        flex-direction: column;
+    }
+
+    .cookingText, .cookingText p, .popText, .popText p {
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 10px
+    }
+
+    .cookingImg, .popImg {
+        width: 100%;
+    }
+
+    .cookContainer {
+        flex-direction: column;
+    }
+
+    .cookImg {
+        width: 50%;
+        margin: 35px;
+    }
+
+    .cookText {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 50px 0;
+    }
+
+    .cookText h3 {
+        text-align: center;
+    }
+
+    .cookText p {
+        font-size: 0.8rem;
+        line-height: 1.25rem;
+    }
+
+    .contact .wrapper {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact .form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+        margin: 5px auto;
+    }
+    .form input, .form button {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .form input::placeholder {
+        opacity: 1;
+    }
+    
+    .bottomRecent {
+        display: none;
+    }
+
+    .bottomContact {
+        text-align: center;
+    }
+
+    .bottomNav {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .bottomNav ul {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottomNav li {
+        padding: 0 10px;
+        text-transform: uppercase;
+        border-right: 1px solid #f8f8f8;
+    }
+
+    .bottomNav li:nth-child(4) {
+        border-right: none;
     }
 }
