@@ -23,6 +23,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html {
     background-color: #EAEDF4;
     font-size: 125%;
+    scroll-behavior: smooth;
 }
 
 body {
