@@ -229,10 +229,15 @@ h1 {
     align-items: center;
 }
 
+.galleryImgs li {
+    margin: 0;
+}
+
 .galleryImgs img {
     width: 100%;
-    height: 425px;
-    margin: 60px 25px;
+    height: auto;
+    max-height: 425px;
+    margin: 60px 0;
 }
 
 .cookingTips {
@@ -250,6 +255,7 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 50%;
+    height: auto;
     text-align: center;
 }
 
@@ -302,6 +308,7 @@ h1 {
 
 .cook {
     background: #fff;
+    padding: 50px 0;
 }
 
 .cookContainer {
@@ -393,8 +400,52 @@ footer {
     justify-content: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1160px) {
+    .cookingText p, .popText p {
+        width: 80%;
+    }
+}
 
+@media (max-width: 894px) {
+    .cookingTips, .popRecipes {
+        flex-direction: column;
+    }
+
+    .cookingText, .cookingText p, .popText, .popText p {
+        width: 100%;
+        margin: 30px 0;
+        padding: 0 10px
+    }
+
+    .cookingImg, .popImg {
+        width: 100%;
+    }
+
+    .cookContainer {
+        flex-direction: column;
+    }
+
+    .cookImg {
+        width: 50%;
+        margin: 35px;
+    }
+
+    .cookText {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 50px 0;
+    }
+
+    .cookText h3 {
+        text-align: center;
+    }
+
+    .cookText p {
+        font-size: 0.8rem;
+        line-height: 1.25rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -436,9 +487,56 @@ footer {
     .sideNav {
         display: none;
     }
+
+    .contact .wrapper {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact .form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+        margin: 5px auto;
+    }
+    .form input, .form button {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .form input::placeholder {
+        opacity: 1;
+    }
+
+    .bottomContact {
+        text-align: center;
+    }
+
+    .bottomNav, .bottomRecent {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .bottomNav ul {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottomNav li {
+        padding: 0 10px;
+        text-transform: uppercase;
+        border-right: 1px solid #f8f8f8;
+    }
+
+    .bottomNav li:nth-child(4) {
+        border-right: none;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 560px) {
     h1 {
         font-size: 5rem;
     }
@@ -473,94 +571,9 @@ footer {
         display: none;
     }
 
-    .cookingTips, .popRecipes {
-        flex-direction: column;
-    }
-
-    .cookingText, .cookingText p, .popText, .popText p {
-        width: 100%;
-        margin: 30px 0;
-        padding: 0 10px
-    }
-
-    .cookingImg, .popImg {
-        width: 100%;
-    }
-
-    .cookContainer {
-        flex-direction: column;
-    }
-
-    .cookImg {
-        width: 50%;
-        margin: 35px;
-    }
-
-    .cookText {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 0 50px 0;
-    }
-
-    .cookText h3 {
-        text-align: center;
-    }
-
-    .cookText p {
-        font-size: 0.8rem;
-        line-height: 1.25rem;
-    }
-
-    .contact .wrapper {
-        flex-direction: column-reverse;
-        width: 100%;
-        margin: 0;
-    }
-
-    .contact .form {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 95%;
-        margin: 5px auto;
-    }
-    .form input, .form button {
-        width: 100%;
-        margin: 5px 0;
-        text-align: center;
-    }
-    .form input::placeholder {
-        opacity: 1;
-    }
-    
     .bottomRecent {
         display: none;
     }
 
-    .bottomContact {
-        text-align: center;
-    }
-
-    .bottomNav {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .bottomNav ul {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .bottomNav li {
-        padding: 0 10px;
-        text-transform: uppercase;
-        border-right: 1px solid #f8f8f8;
-    }
-
-    .bottomNav li:nth-child(4) {
-        border-right: none;
-    }
+    
 }
